@@ -21,7 +21,7 @@
 
 |ChairPerson/Deployer| Token Address | Ballot | 
 | :---: | :---: | :---: | 
-|  | | |
+|  0x6D4BA6307655015ece111A68cbC997de1aFd77B8 | 0xDAB502392ae31556a11757273bC109104442346C |0xCf460354Cc65AAe448151Bad3Aa42159cCbE9240 |
 
 | Proposals |
 | --- | 
