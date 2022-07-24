@@ -42,30 +42,37 @@
 # Scripts
 
 ## Deploy Token
+In this step, we deployed the token of our smart contract.
 
 ![deployToken](img/deployToken.png)
 
 ## Deploy Ballot Contract
+Next we deploy the Ballot Contract address for voting.
 
 ![deploy](img/deploy.png)
 
 ## Mint Token
+Here, we mint some token to the addresses.
 
 ![mint](img/mint.png)
 
 ## Cast a vote to a ballot 
+In this step, we casting a vote to a proposals.
 
 ![castVote](img/castVote.png)
 
 ## Delegate my vote passing  user address as input 
+Here, voter can delegate vote.
 
 ![delegate](img/delegate.png)
 
 ## Query voting result 
+Here, we just make query that give us proposals vote count and name.
 
 ![queryProposals](img/queryProposals.png)
 
 ## Query Proposals
+Its shows us the winning proposal, who got most vote.
 
 ![Query](img/Query.png)
 
