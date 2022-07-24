@@ -19,7 +19,7 @@
 * Udi İbgui (@udi#5722)
 * Alfred Opon (@og1ste#6515)
 
-|ChairPerson/Deployer| Ballot | Ballot | 
+|ChairPerson/Deployer| Token Address | Ballot | 
 | :---: | :---: | :---: | 
 |  | | |
 
