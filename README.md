@@ -43,19 +43,31 @@
 
 ## Deploy Token
 
-![Deployed](img/Deployed.png)
+![deployToken](img/deployToken.png)
 
 ## Deploy Ballot Contract
 
+![deploy](img/deploy.png)
+
 ## Mint Token
+
+![mint](img/mint.png)
 
 ## Cast a vote to a ballot 
 
+![castVote](img/castVote.png)
+
 ## Delegate my vote passing  user address as input 
+
+![delegate](img/delegate.png)
 
 ## Query voting result 
 
+![queryProposals](img/queryProposals.png)
+
 ## Query Proposals
+
+![Query](img/Query.png)
 
 ## EtherScan Transaction Explorer 
 
