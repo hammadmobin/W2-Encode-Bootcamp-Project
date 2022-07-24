@@ -24,6 +24,11 @@ contract CustomBallot {
     IERC20Votes public voteToken;
     uint256 public referenceBlock;
 
+
+     function getProposalsLength() external view returns (uint256 proposalLength) {
+        return proposals.length;
+    }
+
     constructor(bytes32[] memory proposalNames, address _voteToken) {
         for (uint256 i = 0; i < proposalNames.length; i++) {
             proposals.push(Proposal({name: proposalNames[i], voteCount: 0}));
