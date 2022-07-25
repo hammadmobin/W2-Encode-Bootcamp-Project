@@ -69,12 +69,12 @@ Here, voter can delegate vote.
 ## Query voting result 
 Here, we just make query that give us proposals vote count and name.
 
-![queryProposals](img/queryProposals.png)
+![queryProposals](img/Query.png)
 
 ## Query Proposals
 Its shows us the winning proposal, who got most vote.
 
-![Query](img/Query.png)
+![Query](img/queryProposals.png)
 
 ## EtherScan Transaction Explorer 
 
