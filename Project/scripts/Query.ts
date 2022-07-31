@@ -4,6 +4,9 @@ import * as customBallotJson from "../artifacts/contracts/CustomBallot.sol/Custo
 // eslint-disable-next-line node/no-missing-import
 import { CustomBallot } from "../typechain";
 
+// title: A script to query the wining proposal
+// author: Udi İbgui 
+
 // This key is already public on Herong's Tutorial Examples - v1.03, by Dr. Herong Yang
 // Do never expose your keys like this
 const EXPOSED_KEY =
@@ -58,7 +61,7 @@ const customBallotContract: CustomBallot = new Contract(
 // Call the winnerName function from the ballot contract
 const winningProposalName = await customBallotContract.winnerName();
 //Display the winning proposal. Make sure to convert bytes32 to string 
-console.log ("And the winning proposal is..."+ ethers.utils.parseBytes32String(winningProposalName))
+console.log ("And the winning proposal is..."+  ethers.utils.parseBytes32String(winningProposalName))
 
 }
 
