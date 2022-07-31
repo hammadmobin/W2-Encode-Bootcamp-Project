@@ -5,6 +5,10 @@ interface IERC20Votes {
     function getPastVotes(address, uint256) external view returns (uint256);
 }
 
+/// @title Custom Ballot for Election
+/// @author Matheus Pagani
+/// @notice You can use this contract for Ballot interaction
+/// @dev All function calls are currently implemented without side effects
 contract CustomBallot {
     event Voted(
         address indexed voter,
@@ -24,7 +28,8 @@ contract CustomBallot {
     IERC20Votes public voteToken;
     uint256 public referenceBlock;
 
-
+    /// @notice This function used to get the proposal length
+    /// @return proposalLength Proposal length from Proposals array
      function getProposalsLength() external view returns (uint256 proposalLength) {
         return proposals.length;
     }
@@ -37,6 +42,9 @@ contract CustomBallot {
         referenceBlock = block.number;
     }
 
+    /// @notice This function used by the voter to cast the vote
+    /// @param proposal parameter where voter give the prosposal where he want to vote
+    /// @param amount amount of voting that voter give to the proposal
     function vote(uint256 proposal, uint256 amount) external {
         uint256 votingPowerAvailable = votingPower();
         require(votingPowerAvailable >= amount, "Has not enough voting power");
@@ -45,6 +53,8 @@ contract CustomBallot {
         emit Voted(msg.sender, proposal, amount, proposals[proposal].voteCount);
     }
 
+    /// @notice get the winner proposal name
+    /// @return  winningProposal_ Its return the proposal which gets the most votes.
     function winningProposal() public view returns (uint256 winningProposal_) {
         uint256 winningVoteCount = 0;
         for (uint256 p = 0; p < proposals.length; p++) {
@@ -55,10 +65,14 @@ contract CustomBallot {
         }
     }
 
+    /// @notice This Functionality gives the Winning Proposal Name 
+    /// @return winnerName_ By this we get the winner name from the proposals array
     function winnerName() external view returns (bytes32 winnerName_) {
         winnerName_ = proposals[winningProposal()].name;
     }
 
+    /// @notice This function used to calculate the voting power
+    /// @return votingPower_ Its return the voting power so user can able to vote
     function votingPower() public view returns (uint256 votingPower_) {
         votingPower_ =
             voteToken.getPastVotes(msg.sender, referenceBlock) -
