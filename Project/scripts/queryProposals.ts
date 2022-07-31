@@ -3,6 +3,8 @@ import "dotenv/config";
 import * as ballotJson from "../artifacts/contracts/CustomBallot.sol/CustomBallot.json";
 import { CustomBallot } from "../typechain";
 
+// title: A script to query the proposals name and votes
+// author: Muhammad Hammad Mobin
 
 // This key is already public on Herong's Tutorial Examples - v1.03, by Dr. Herong Yang
 // Do never expose your keys like this

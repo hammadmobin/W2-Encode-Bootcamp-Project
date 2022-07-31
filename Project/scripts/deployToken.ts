@@ -3,6 +3,9 @@ import "dotenv/config";
 import * as tokenJson from "../artifacts/contracts/Token.sol/MyToken.json";
 import { MyToken } from "../typechain";
 
+// title: A script to deploy the token
+// author: Muhammad Hammad Mobin
+
 // This key is already public on Herong's Tutorial Examples - v1.03, by Dr. Herong Yang
 // Do never expose your keys like this
 const EXPOSED_KEY =

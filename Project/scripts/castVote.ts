@@ -3,6 +3,9 @@ import "dotenv/config";
 import * as ballotJson from "../artifacts/contracts/CustomBallot.sol/CustomBallot.json"
 import { CustomBallot } from "../typechain";
 
+// title: A script to cast vote
+// author: Alfred Opon 
+
 // This key is already public on Herong's Tutorial Examples - v1.03, by Dr. Herong Yang
 // Do never expose your keys like this
 const EXPOSED_KEY =
